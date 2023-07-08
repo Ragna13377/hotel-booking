@@ -1,0 +1,28 @@
+.page {
+  padding: 0 120px 120px;
+}
+
+.header, .main, .footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer {
+  color: white;
+  background-color: #0B265A;
+}
+.footer .footer__about-info .socials .socials__list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.footer .footer__about-info .socials .socials__list .socials__list-item .socials__link .socials__link-vk {
+  width: 45px;
+  height: 45px;
+}
+.footer .footer__about-info .socials .socials__list .socials__list-item .socials__link .socials__link-tweeter {
+  width: 45px;
+  height: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+//font-family: 'Inter', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+$header-color: white;
+$conent-color: #D9DBDE;
+.page{
+  padding: 0 120px 120px;
+}
+
+.header, .main, .footer{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer{
+  color: $header-color;
+  background-color: #0B265A;
+  .footer__about-info{
+    .footer_about-info-label{
+      color: ;
+    }
+    .footer__about-info-description{
+
+    }
+    .socials{
+      .socials__list{
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        .socials__list-item{
+          .socials__link{
+            .socials__link-vk{
+              width: 45px;
+              height: 45px;
+            }
+            .socials__link-tweeter{
+              width: 45px;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
