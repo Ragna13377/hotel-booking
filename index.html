@@ -11,25 +11,102 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div class="page">
-    <header class="header"></header>
+  <div class="page ">
+    <header class="header section">
+      <h2 class="header_logo">HotelBooking</h2>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="" class="header__link">Дома</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Бронирование</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="" class="common-button">Бронировать</a>
+    </header>
     <main class="main">
-      <div class="carousel">
-        <div class="review carousel__item">
+      <section class="site-activity section">
+        <div class="site-activity__description">
+          <div class="main-info">
+            <h1 class="main-info__title">Аренда загородного <br> дома для отдыха</h1>
+            <p class="main-info__description">Самые выгодные предложения по аренде коттеджей <br> и загородных домов в Москве и
+              области</p>
+          </div>
+          <a href="" class="common-button">Бронирование</a>
+        </div>
+        <div class="site-activity__triptych">
+          <img src="./images/left.png" alt="" class="site-activity__image">
+          <img src="./images/middle.png" alt="" class="site-activity__image">
+          <img src="./images/right.png" alt="" class="site-activity__image">
+        </div>
+      </section>
+      <section class="interiors section">
+        <h2 class="interiors__title">Наши интерьеры</h2>
+        <article class="tiles">
+          <img class="tiles__current-image tiles__current-image_active" src="./images/image_big.jpg" alt="Интерьер дома в стиле 1">
+          <div class="tiles__side-block">
+            <img class="tiles__current-image" src="./images/image_small_01.png" alt="Интерьер дома в стиле 1">
+            <img class="tiles__current-image" src="./images/image_small_02.png" alt="Интерьер дома в стиле 1">
+            <img class="tiles__current-image" src="./images/image_small_03.png" alt="Интерьер дома в стиле 1">
+          </div>
+        </article>
+      </section>
+      <section class="reservation section">
+        <div class="reservation__info">
+          <div class="main-info reservation__main-info">
+            <h2 class="main-info__title">Выберите ваш дом</h2>
+            <p class="main-info__description">У нас есть дома для любых мероприятий. Для большой компании у&nbsp;нас есть двухэтажный дом на самом краю леса.</p>
+          </div>
+          <a href="" class="common-button">Подробнее</a>
+        </div>
+        <ul class="reservation__list">
+          <li class="reservation__list-item">
+            <article class="card">
+              <img src="./images/small-house.png" alt="Деревянный дом вид изнутри" class="card__image">
+              <h3 class="card__title">Маленький домик</h3>
+              <p class="card__description">Уютный коттедж с  3 спальнями и  бильярдом. </p>
+              <a href="" class="card__link-more">Подробнее</a>
+            </article>
+          </li>
+          <li class="reservation__list-item">
+            <article class="card">
+              <img src="./images/big-house.png" alt="Девушка на кровати с книгой в руках внутри деревянного дома" class="card__image">
+              <h3 class="card__title">Большой дом</h3>
+              <p class="card__description">266 кв.м. с тремя спальнями, четырьмя санузлами, камином и бильярдом. </p>
+              <a href="" class="card__link-more">Подробнее</a>
+            </article>
+          </li>
+          <li class="reservation__list-item">
+            <article class="card">
+              <img src="./images/2-floor-house.png" alt="Деревянный двухэтажный дом в лесу" class="card__image">
+              <h3 class="card__title">Двухэтажный дом</h3>
+              <p class="card__description">Коттедж с сауной, четырьмя спальнями и бильярдом. Идеально подойдет для полноценного празднования нового года. </p>
+              <a href="" class="card__link-more">Подробнее</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews section">
+        <div class="review reviews__item">
           <h2 class="review__title">Отзывы</h2>
           <img src="./images/avatar-review-01.png" alt="Reviewer avatar" class="review__avatar">
           <p class="review__text">Мы очень долго искали коттедж, чтобы отметить день рождение. Все очень понравилось. Комфортно, уютно,не дом, а сказка. Все очень понравилось, хочется приехать еще сюда не один раз</p>
           <p class="review__signature">Ирина Иванова</p>
         </div>
-        <div class="carousel__dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-      </div>
+        <ul class="dots">
+          <li class="dots__item"></li>
+          <li class="dots__item dots__item_active"></li>
+          <li class="dots__item"></li>
+          <li class="dots__item"></li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
       <div class="footer__about-socials">
         <div class="about">
           <h2 class="about__label">HotelBooking</h2>
@@ -54,7 +131,9 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <h3 class="menu__title">Дома</h3>
+              <h3 class="menu__title">
+                <a href="" class="menu__link">Дома</a>
+              </h3>
             </li>
             <li class="menu__list-item">
               <a href="" class="menu__link">Маленький домик</a>
@@ -70,7 +149,9 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <h3 class="menu__title">Бронирование</h3>
+              <h3 class="menu__title">
+                <a href="" class="menu__link">Бронирование</a>
+              </h3>
             </li>
             <li class="menu__list-item">
               <a href="" class="menu__link">Оформление</a>
@@ -83,7 +164,9 @@
         <address class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <h3 class="menu__title">Контакты</h3>
+              <h3 class="menu__title">
+                <a href="" class="menu__link">Контакты</a>
+              </h3>
             </li>
             <li class="menu__list-item">
               <a href="tel:88005553535" class="menu__link">8-800-555-35-35</a>
