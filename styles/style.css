@@ -72,6 +72,41 @@
   margin-top: 81px;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__image {
+  width: 384px;
+  height: 576px;
+}
+.about .about__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 33px;
+}
+.about .about__description .common-button {
+  margin-right: auto;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+}
+.benefit .benefit__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefit .benefit__description:last-child {
+  flex-direction: row-reverse;
+}
+.benefit .benefit__image {
+  width: 384px;
+  height: 384px;
+}
+
 .interiors {
   padding: 80px 0 0;
 }

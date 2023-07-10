@@ -72,9 +72,43 @@
     width: 180px;
     height: 588px;
   }
-
   .site-activity__image:nth-child(2){
     margin-top: 81px;
+  }
+}
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  .about__image{
+    width: 384px;
+    height: 576px;
+  }
+  .about__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 33px;
+    .common-button{
+      margin-right: auto;
+    }
+  }
+}
+
+.benefit{
+  display: flex;
+  flex-direction: column;
+  .benefit__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .benefit__description:last-child{
+    flex-direction: row-reverse;
+  }
+  .benefit__image{
+    width: 384px;
+    height: 384px;
   }
 }
 
