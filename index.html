@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+<img src="pixelperfect.png" alt="" style="position: absolute; opacity: 50%; top:0; left: 0; z-index: -1">
   <div class="page ">
     <header class="header section">
       <h2 class="header_logo">HotelBooking</h2>
@@ -31,22 +32,20 @@
     </header>
     <main class="main">
       <section class="site-activity section">
-        <div class="site-activity__description">
-          <div class="main-info">
-            <h1 class="main-info__title">Аренда загородного <br> дома для отдыха</h1>
-            <p class="main-info__description">Самые выгодные предложения по аренде коттеджей <br> и загородных домов в Москве и
-              области</p>
-          </div>
+        <div class="site-activity__text">
+          <h1 class="site-activity__title">Аренда загородного дома для отдыха</h1>
+          <p class="site-activity__description">Самые выгодные предложения по аренде коттеджей <br> и загородных домов в Москве и
+            области</p>
           <a href="" class="common-button">Бронирование</a>
         </div>
         <div class="site-activity__triptych">
-          <img src="./images/left.png" alt="" class="site-activity__image">
-          <img src="./images/middle.png" alt="" class="site-activity__image">
-          <img src="./images/right.png" alt="" class="site-activity__image">
+          <img src="./images/left.png" alt="Левая треть синего деревянного дома в лесу." class="site-activity__image" width="180" height="588">
+          <img src="./images/middle.png" alt="Средняя треть синего деревянного дома в лесу." class="site-activity__image" width="180" height="588">
+          <img src="./images/right.png" alt="Правая треть синего деревянного дома в лесу." class="site-activity__image" width="180" height="588">
         </div>
       </section>
       <section class="about section">
-        <img src="./images/about.png" alt="" class="about__image">
+        <img src="./images/about.png" alt="Двухэтажный деревянный с винтовой лестницей на столбах." class="about__image" width="384" height="576">
         <div class="about__description">
           <div class="main-info">
             <h2 class="main-info__title">Уютный двухэтажный дом в <br> норвежском стиле</h2>
@@ -59,41 +58,50 @@
         <div class="benefit__description">
           <div class="main-info">
             <h2 class="main-info__title">Активности</h2>
-            <p class="main-info__description">К вашим услугам наши прекрасные повора, которые приготовят вкусную еду по составленную для вас персональному меню. Также вы сможете воспользоваться СПА, тренажерным залом и прочими услугами, доступными на нашей территории.</p>
+            <p class="main-info__description">К вашим услугам наши прекрасные повора, которые приготовят вкусную еду по составленную для вас персональному меню. Также вы сможете воспользоваться СПА, тренажерным залом и прочими услугами, доступными на нашей территории.</p>
           </div>
-          <img src="./images/benefit1.png" alt="" class="benefit__image">
+          <img src="./images/benefit1.png" alt="Люди чокаются фужерами." class="benefit__image" width="384" height="384">
         </div>
         <div class="benefit__description">
           <div class="main-info">
             <h2 class="main-info__title">100% Натуральные продукты</h2>
             <p class="main-info__description">При приготовлении наших блюд мы используем только свежие, полезные, натуральные продукты.</p>
           </div>
-          <img src="./images/benefit2.jpg" alt="" class="benefit__image">
+          <img src="./images/benefit2.jpg" alt="Тарелка с едой." class="benefit__image" width="384" height="384">
         </div>
       </section>
       <section class="interiors section">
         <h2 class="interiors__title">Наши интерьеры</h2>
         <article class="tiles">
-          <img class="tiles__current-image tiles__current-image_active" src="./images/image_big.jpg" alt="Интерьер дома в стиле 1">
+          <div class="tiles__wrapper">
+            <img class="tiles__current-image tiles__current-image_active" src="./images/image_big.jpg" alt="Интерьер дома в стиле 1." width="1090" height="586">
+            <ul class="dots">
+              <li class="dots__item"></li>
+              <li class="dots__item dots__item_active"></li>
+              <li class="dots__item"></li>
+              <li class="dots__item"></li>
+            </ul>
+          </div>
           <div class="tiles__side-block">
-            <img class="tiles__current-image" src="./images/image_small_01.png" alt="Интерьер дома в стиле 1">
-            <img class="tiles__current-image" src="./images/image_small_02.png" alt="Интерьер дома в стиле 1">
-            <img class="tiles__current-image" src="./images/image_small_03.png" alt="Интерьер дома в стиле 1">
+            <img class="tiles__current-image" src="./images/image_small_01.png" alt="Интерьер дома в стиле 2." width="344" height="194">
+            <img class="tiles__current-image" src="./images/image_small_02.png" alt="Интерьер дома в стиле 3." width="344" height="194">
+            <img class="tiles__current-image" src="./images/image_small_03.png" alt="Интерьер дома в стиле 4." width="344" height="194">
           </div>
         </article>
+
       </section>
       <section class="reservation section">
         <div class="reservation__info">
           <div class="main-info reservation__main-info">
             <h2 class="main-info__title">Выберите ваш дом</h2>
-            <p class="main-info__description">У нас есть дома для любых мероприятий. Для большой компании у&nbsp;нас есть двухэтажный дом на самом краю леса.</p>
+            <p class="main-info__description">У нас есть дома для любых мероприятий. Для большой компании у нас есть двухэтажный дом на самом краю леса.</p>
           </div>
           <a href="" class="common-button">Подробнее</a>
         </div>
         <ul class="reservation__list">
           <li class="reservation__list-item">
             <article class="card">
-              <img src="./images/small-house.png" alt="Деревянный дом вид изнутри" class="card__image">
+              <img src="./images/small-house.png" alt="Деревянный дом вид изнутри." class="card__image">
               <h3 class="card__title">Маленький домик</h3>
               <p class="card__description">Уютный коттедж с  3 спальнями и  бильярдом. </p>
               <a href="" class="card__link-more">Подробнее</a>
@@ -101,7 +109,7 @@
           </li>
           <li class="reservation__list-item">
             <article class="card">
-              <img src="./images/big-house.png" alt="Девушка на кровати с книгой в руках внутри деревянного дома" class="card__image">
+              <img src="./images/big-house.png" alt="Девушка на кровати с книгой в руках внутри деревянного дома." class="card__image">
               <h3 class="card__title">Большой дом</h3>
               <p class="card__description">266 кв.м. с тремя спальнями, четырьмя санузлами, камином и бильярдом. </p>
               <a href="" class="card__link-more">Подробнее</a>
@@ -109,7 +117,7 @@
           </li>
           <li class="reservation__list-item">
             <article class="card">
-              <img src="./images/2-floor-house.png" alt="Деревянный двухэтажный дом в лесу" class="card__image">
+              <img src="./images/2-floor-house.png" alt="Деревянный двухэтажный дом в лесу." class="card__image" width="384" height="489">
               <h3 class="card__title">Двухэтажный дом</h3>
               <p class="card__description">Коттедж с сауной, четырьмя спальнями и бильярдом. Идеально подойдет для полноценного празднования нового года. </p>
               <a href="" class="card__link-more">Подробнее</a>
@@ -142,12 +150,12 @@
           <ul class="socials__list">
             <li class="socials__list-item">
               <a href="#0" class="socials__link">
-                <img src="./images/twitter.svg" alt="Twitter" class="socials__link-image socials__link-tweeter">
+                <img src="./images/twitter.svg" alt="Twitter." class="socials__link-image socials__link-tweeter" width="32" height="32">
               </a>
             </li>
             <li class="socials__list-item">
               <a href="#0" class="socials__link">
-                <img src="./images/VK.svg" alt="Vkontakte" class="socials__link-image socials__link-vk">
+                <img src="./images/VK.svg" alt="Vkontakte." class="socials__link-image socials__link-vk" width="44" height="26">
               </a>
             </li>
           </ul>
