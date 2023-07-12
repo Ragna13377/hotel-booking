@@ -17,34 +17,34 @@
 }
 
 .header {
-  padding-top: 41px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
+  padding-top: 41px;
+  padding-bottom: 32px;
 }
-.header .header_logo {
+.header .header__logo {
+  min-width: 228px;
   color: var(--header-color);
   font-family: Montserrat, serif;
+  font-weight: 600;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
-  min-width: 228px;
 }
 .header .header__menu {
   margin: 0 auto;
 }
 .header .header__list {
-  list-style-type: none;
   display: flex;
   gap: 36px;
   letter-spacing: 0.8px;
+  list-style-type: none;
 }
 .header .header__link {
   color: var(--header-color);
+  font-weight: 500;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   text-decoration: none;
 }
@@ -67,25 +67,25 @@
   margin-right: auto;
 }
 .site-activity .site-activity__title {
-  color: var(--header-color);
-  font-family: Montserrat, serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.48px;
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
+  color: var(--header-color);
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -0.48px;
 }
 .site-activity .site-activity__description {
+  margin-bottom: 59px;
   color: var(--content-color);
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.7px;
-  margin-bottom: 59px;
 }
 .site-activity .site-activity__triptych {
   display: flex;
@@ -149,13 +149,13 @@
 .interiors .interiors__title {
   margin-bottom: 38px;
   color: var(--color-white);
-  text-align: center;
   font-family: Montserrat, serif;
+  font-weight: 600;
   font-size: 36px;
   font-style: normal;
-  font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.36px;
+  text-align: center;
 }
 .interiors .tiles__wrapper {
   position: relative;
@@ -185,19 +185,19 @@
   height: 194px;
 }
 .tiles .tiles__current-image_active {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .reservation .reservation__info {
-  margin-bottom: 88px;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 88px;
 }
 .reservation .reservation__main-info {
-  margin-bottom: 32px;
   margin-top: -8px;
+  margin-bottom: 32px;
 }
 .reservation .reservation__main-info .main-info__title, .reservation .reservation__main-info .main-info__description {
   text-align: center;
@@ -209,80 +209,80 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style-type: none;
   gap: 24px;
   margin: 0 auto;
+  list-style-type: none;
 }
 
 .main-info .main-info__title {
+  margin-bottom: 24px;
   color: var(--header-color);
-  text-align: left;
+  font-family: Montserrat, serif;
+  font-weight: 600;
   font-size: 36px;
   font-style: normal;
-  font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.36px;
-  margin-bottom: 24px;
-  font-family: Montserrat, serif;
+  text-align: left;
 }
 .main-info .main-info__description {
+  max-width: 584px;
   color: var(--content-color);
-  text-align: left;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%;
-  max-width: 584px;
   letter-spacing: 0.6px;
+  text-align: left;
 }
 
 .common-button {
+  border-radius: 4px;
   padding: 16px 32px;
-  background: #0E1734;
   color: #FFF;
+  font-weight: 500;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
-  text-decoration: none;
   letter-spacing: 1px;
-  border-radius: 4px;
+  text-decoration: none;
+  background: #0E1734;
 }
 
 .card {
-  width: 384px;
   display: flex;
   flex-direction: column;
+  width: 384px;
   height: 100%;
 }
 .card .card__image {
   margin-bottom: 32px;
 }
 .card .card__title {
+  margin-bottom: 16px;
   color: #000;
   font-family: Montserrat, serif;
+  font-weight: 600;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
   line-height: 150%;
-  margin-bottom: 16px;
 }
 .card .card__description {
-  color: #848FAC;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   display: flex;
   flex-grow: 1;
+  color: #848FAC;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
   letter-spacing: 0.8px;
 }
 .card .card__link-more {
   margin-top: 32px;
   color: #424F7B;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%;
   text-decoration: none;
 }
@@ -294,32 +294,32 @@
 }
 
 .reviews {
-  padding-left: 323px;
-  padding-right: 323px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 323px;
+  padding-left: 323px;
 }
 .reviews .reviews__title {
+  margin-bottom: 62px;
   color: var(--header-color);
-  text-align: center;
   font-family: Montserrat, serif;
+  font-weight: 600;
   font-size: 36px;
   font-style: normal;
-  font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.36px;
-  margin-bottom: 62px;
+  text-align: center;
 }
 .reviews .reviews__item {
   margin-bottom: 24px;
 }
 
 .dots {
-  width: 72px;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+  width: 72px;
+  list-style-type: none;
 }
 .dots .dots__item {
   width: 8px;
@@ -342,34 +342,34 @@
 .review .review__avatar {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
   margin-bottom: 44px;
+  border-radius: 50%;
 }
 .review .review__text {
+  max-width: 750px;
+  margin-bottom: 40px;
   color: var(--content-color);
-  text-align: center;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%;
-  margin-bottom: 40px;
-  max-width: 750px;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 .review .review__signature {
   color: #192252;
-  text-align: center;
+  font-weight: 500;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 
 .footer {
+  background-color: #0B265A;
   --content-color: #d9dbde;
   --header-color: #fff;
-  background-color: #0B265A;
 }
 .footer .footer__container {
   display: flex;
@@ -390,15 +390,15 @@
 }
 
 .socials .socials__list {
-  list-style-type: none;
   display: flex;
   gap: 20px;
   padding-left: 5px;
+  list-style-type: none;
 }
 .socials .socials__list .socials__list-item .socials__link {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 .socials .socials__list .socials__list-item .socials__link .socials__link-vk {
   width: 44px;
@@ -416,30 +416,30 @@
 .footer-about .footer-about__label {
   color: var(--header-color);
   font-family: Montserrat, serif;
-  font-size: 32px;
   font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
   line-height: normal;
   letter-spacing: -0.32px;
-  font-style: normal;
 }
 .footer-about .footer-about__description {
-  color: var(--content-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
   margin: 13px 0 0;
+  color: var(--content-color);
+  font-weight: 400;
+  font-size: 16px;
   font-style: normal;
+  line-height: 28px;
   letter-spacing: 0.7px;
 }
 
 .menu .menu__list {
   display: flex;
-  font-size: 16px;
   flex-direction: column;
-  list-style-type: none;
   gap: 24px;
+  font-size: 16px;
   font-style: normal;
   line-height: normal;
+  list-style-type: none;
 }
 .menu .menu__list .menu__title .menu__link {
   color: var(--header-color);
@@ -449,8 +449,8 @@
 .menu .menu__list .menu__link {
   color: var(--content-color);
   font-weight: 400;
-  text-decoration: none;
   letter-spacing: 0.6px;
+  text-decoration: none;
 }
 .menu .menu__list .menu__link[href*="tel:"] {
   opacity: 0.8;
