@@ -11,7 +11,7 @@
   padding: 80px 120px;
 }
 
-.header, .main, .footer {
+.header, .main, .footer .footer__container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -135,7 +135,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.benefit .benefit__description:last-child {
+.benefit .benefit__description_reverse {
   flex-direction: row-reverse;
 }
 .benefit .benefit__image {
@@ -300,6 +300,17 @@
   flex-direction: column;
   align-items: center;
 }
+.reviews .reviews__title {
+  color: var(--header-color);
+  text-align: center;
+  font-family: Montserrat, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.36px;
+  margin-bottom: 62px;
+}
 .reviews .reviews__item {
   margin-bottom: 24px;
 }
@@ -327,17 +338,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.review .review__title {
-  color: var(--header-color);
-  text-align: center;
-  font-family: Montserrat, serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.36px;
-  margin-bottom: 62px;
 }
 .review .review__avatar {
   width: 120px;
@@ -369,17 +369,51 @@
 .footer {
   --content-color: #d9dbde;
   --header-color: #fff;
+  background-color: #0B265A;
+}
+.footer .footer__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 116px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
-.footer .about {
-  margin-bottom: 40px;
+.footer .footer__menu {
+  display: flex;
+  gap: 77px;
+}
+.footer .footer__menu-container {
+  display: flex;
+  gap: 95px;
+}
+.footer .footer-about {
+  margin-bottom: 36px;
+}
+
+.socials .socials__list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 5px;
+}
+.socials .socials__list .socials__list-item .socials__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.socials .socials__list .socials__list-item .socials__link .socials__link-vk {
+  width: 44px;
+  height: 26px;
+}
+.socials .socials__list .socials__list-item .socials__link .socials__link-tweeter {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-about {
   display: flex;
   flex-direction: column;
 }
-.footer .about .about__label {
+.footer-about .footer-about__label {
   color: var(--header-color);
   font-family: Montserrat, serif;
   font-size: 32px;
@@ -388,31 +422,14 @@
   letter-spacing: -0.32px;
   font-style: normal;
 }
-.footer .about .about__description {
+.footer-about .footer-about__description {
   color: var(--content-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   margin: 13px 0 0;
   font-style: normal;
-}
-.footer .socials .socials__list {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-.footer .socials .socials__list .socials__list-item .socials__link .socials__link-vk {
-  width: 44px;
-  height: 26px;
-}
-.footer .socials .socials__list .socials__list-item .socials__link .socials__link-tweeter {
-  width: 32px;
-  height: 32px;
-}
-.footer .footer__menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 77px;
+  letter-spacing: 0.7px;
 }
 
 .menu .menu__list {
@@ -427,12 +444,13 @@
 .menu .menu__list .menu__title .menu__link {
   color: var(--header-color);
   font-weight: 700;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.05px;
 }
 .menu .menu__list .menu__link {
   color: var(--content-color);
   font-weight: 400;
   text-decoration: none;
+  letter-spacing: 0.6px;
 }
 .menu .menu__list .menu__link[href*="tel:"] {
   opacity: 0.8;
