@@ -431,7 +431,7 @@
   line-height: normal;
   list-style-type: none;
 }
-.menu .menu__list .menu__title .menu__link {
+.menu .menu__list .menu__title {
   color: var(--header-color);
   font-weight: 700;
   letter-spacing: 0.16px;
@@ -445,4 +445,4 @@
   opacity: 0.8;
 }
 
-/*# sourceMappingURL=../OSPanel/domains/dev/hotel-booking/styles/style.css.map */
+/*# sourceMappingURL=style.css.map */
